@@ -1,0 +1,28 @@
+This is the project of Antonio Saboanu. You can see the assignment in the pdf file in this directory. 
+
+The first part of this assignment is to answer some questions. 
+
+Q: What is a template?
+A: A template is a C++ feature that enables generic programming. It allows developers to define functions or classes using placeholder types (parameters) instead of specific data types. This eliminates the need to rewrite identical code for different types. When the template is used, the compiler generates (instantiates) the specific version of the code at compile-time based on the types passed to it.
+
+Q: How can you make a class abstract?
+A: A class is made abstract by declaring at least one of its member functions as a pure virtual function. This is done by appending = 0 to the function declaration (ex., virtual void func() = 0;). This prevents the compiler from instantiating the class and forces derived classes to implement that specific function.
+
+Q: What is a virtual function and how does it differ from a non-virtual function?
+A: A virtual function uses dynamic binding. This means that when a function is called through a base class pointer or reference, the program checks the actual object type at runtime to decide which implementation to execute.
+It differs from a non-virtual function which uses static binding. With non-virtual functions, the compiler decides which version to call based solely on the pointer type, ignoring the actual object type.
+
+Q: What is a base class?
+A: A base class (or parent class) is a class from which other classes, known as derived classes, inherit attributes and member functions. 
+
+Q: What makes a class derived?
+A: A class is derived when it is defined to inherit attributes and behaviors from another class (called the base class). In C++, this is explicitly declared in the class definition by placing a colon (:) after the class name, followed by the access specifier (like public) and the name of the base class.
+
+Q: How does a pure virtual function differ from other virtual functions?
+A: A pure virtual function differs because it has no implementation in the base class and is declared with the syntax = 0. Unlike a standard virtual function (which provides a default implementation that derived classes can override), a pure virtual function forces derived classes to implement it. If they don't, they become abstract classes themselves and cannot be instantiated.
+
+Q: What does overriding mean?
+A: Overriding is the mechanism by which a derived class provides a specific implementation for a function that is already defined in its base class. To override a function, the function in the base class must be declared as virtual, and the derived class must define a function with the exact same signature (name and parameters).
+
+
+After this questions it is given an assignment. The goal is to read from a file the structure of a maze and then to programme a robot that finds a path from START to EXIT. For the detailed assignment read [assignment.pdf](Assignment.pdf).
