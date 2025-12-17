@@ -1,3 +1,0 @@
-/Users/antoniosaboanu/Documents/GitHub/RobotNavigation/build/CMakeFiles/RobotNavigation.dir
-/Users/antoniosaboanu/Documents/GitHub/RobotNavigation/build/CMakeFiles/edit_cache.dir
-/Users/antoniosaboanu/Documents/GitHub/RobotNavigation/build/CMakeFiles/rebuild_cache.dir
