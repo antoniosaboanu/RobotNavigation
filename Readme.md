@@ -26,3 +26,20 @@ A: Overriding is the mechanism by which a derived class provides a specific impl
 
 
 After this questions it is given an assignment. The goal is to read from a file the structure of a maze and then to programme a robot that finds a path from START to EXIT. For the detailed assignment read [assignment.pdf](Assignment.pdf).
+
+
+The project solves the robot navigation problem by modeling the maze as a dynamically allocated graph.
+
+Key Components:
+
+Maze: Reads the input file and generates a graph. Traversable tiles become nodes linked by edges based on Moore neighborhood rules.
+
+Node & Edge: The building blocks of the graph. Nodes store BFS depth information, while Edges connect adjacent nodes.
+
+Robot (Base Class): Defines the virtual interface for movement.
+
+RandomRobot: Implements a brute-force random walk strategy (success not guaranteed).
+
+WavefrontRobot: Implements a Breadth-First Search (BFS) to intelligently calculate the shortest path to the exit.
+
+Why a Graph? Although a simple matrix approach would have sufficed, I chose a pointer-based graph structure allocated on the heap. This "overkill" design makes the application highly modular and ready for future expansions, such as handling weighted paths or complex maze topologies.

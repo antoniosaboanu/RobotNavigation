@@ -1,8 +1,10 @@
 #ifndef NODE_H
 #define NODE_H
 
-#include "Edge.h"
 #include <vector>
+
+#pragma once
+class Edge;
 
 class Node
 {
@@ -15,14 +17,15 @@ public:
     int getDepth() const;
     void setDepth(int depth);
 
-    void addEdge(const Edge &edge);
-    const std::vector<Edge> &getEdges() const;
+    void addEdge(Edge *edge);
+    const std::vector<Edge *> &getEdges() const;
+    std::string toString() const;
 
 private:
     int x_;
     int y_;
     int depth_;
-    std::vector<Edge> edges_;
+    std::vector<Edge *> edges_; // Links to adiacent nodes via edges
 };
 
 #endif // NODE_H
