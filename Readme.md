@@ -73,14 +73,22 @@ Navigate to the project root directory.
 ## Create a build directory:
 
 Bash
+
 mkdir build
+
 cd build
+
 cmake ..
 
+
 Bash
+
 cmake --build . 
+
 for windows, otherwhise "make" it will be enough
 
 Bash
+
 ./RobotNavigation
+
 (Replace RobotNavigation with your specific executable name if different).
